@@ -1,6 +1,7 @@
 import './App.css';
 import {Navpanel} from './components/Navpanel';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {Home} from './subpage/Home';
 import {Inscripcion} from './subpage/Inscripcion';

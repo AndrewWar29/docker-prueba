@@ -1,25 +1,7 @@
-.logo_de_marca{
-    width: 90px;
+.Barra_de_navegacion{
+    background-color: #1D1E20;
 }
 
-.linkText{ 
-    color: #2292BC ;
-    text-decoration:none; 
-}
-
-.linkText:hover{ 
-    color: black ;
-}
-
-.navegacion{
-    background-color: black;
-}
-
-.justify-content-end{
-    text-align: left;
-
-}
-
-.navbar  a {
-    font-size: 18px;
+.Linkss{
+    color: white;
 }
