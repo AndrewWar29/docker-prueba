@@ -10,7 +10,7 @@ services:
 
   db:
     restart: always
-    image: mariadb:5.5
+    image: mariadb
     environment:
       - MYSQL_HOST=localhost
       - MYSQL_PORT=3306
@@ -35,6 +35,8 @@ services:
     build:
       context: ./backend
       dockerfile: dockerfile
+    volumes:
+      - build-folder:/app/frontend/build
     ports:
       - "8000:8000"
     depends_on:
@@ -50,6 +52,8 @@ services:
     build:
       context: ./frontend
       dockerfile: dockerfile
+    volumes:
+      - build-folder:/app/frontend/build
     ports:
       - "3000:3000"
     stdin_open: true
@@ -61,3 +65,7 @@ services:
 networks:
   db-net:
     driver: bridge
+
+volumes:
+  build-folder:
+
